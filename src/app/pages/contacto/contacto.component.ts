@@ -34,8 +34,8 @@ errorEnvio = false;
   ];
 
   instagram = {
-    usuario: '@loscerezos_amoblamientos',
-    url: 'https://www.instagram.com/loscerezos_amoblamientos'
+    usuario: '@loscerezosamoblamientos',
+    url: 'https://www.instagram.com/loscerezosamoblamientos'
   };
 
   async onSubmit() {
