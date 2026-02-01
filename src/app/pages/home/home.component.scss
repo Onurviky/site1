@@ -1,0 +1,210 @@
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 750ms ease, transform 950ms ease;
+}
+
+.carousel-img.is-animating {
+  opacity: 0.2;
+  transform: scale(1.02);
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    opacity: 0.95;
+  }
+}
+
+/* Flechas */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  line-height: 1;
+  user-select: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-50%) scale(1.03);
+  }
+}
+
+.prev {
+  left: 16px;
+}
+
+.next {
+  right: 16px;
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.55);
+
+  &.active {
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile: flechas un poco más chicas */
+@media (max-width: 600px) {
+  .nav {
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+  }
+}
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+
+.intro {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+
+  h2 {
+    color: #712e1e;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 800px;
+    margin: auto;
+    color: #333;
+  }
+}
+
+.destacados {
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+
+  h3 {
+    color: #712e1e;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+      img {
+        height: 300px;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        color: #712e1e;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        color: #bba07b;
+        font-weight: 500;
+      }
+    }
+  }
+}

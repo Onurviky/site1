@@ -1,0 +1,47 @@
+<section class="productos">
+  <div class="cabecera">
+    <h1>{{ tituloCategoria() }}</h1>
+
+    <p class="sub">
+      @if (categoriaActual === 'todas') {
+        Mostrando todos los productos
+      } @else {
+        Mostrando solo: <b>{{ categoriaActual }}</b>
+      }
+    </p>
+
+    <div class="atajos">
+      <a routerLink="/productos/cocinas">Cocinas</a>
+      <a routerLink="/productos/placards">Placards</a>
+      <a routerLink="/productos/banio">Baño</a>
+      <a routerLink="/productos/lavaderos">Lavaderos</a>
+      <a routerLink="/productos/living">Living / TV</a>
+      <a routerLink="/productos/dormitorios">Dormitorios</a>
+      <a routerLink="/productos/infantiles">Infantiles</a>
+      <a routerLink="/productos/bibliotecas">Bibliotecas</a>
+      <a routerLink="/productos/escaleras">Escaleras y Bajoescaleras</a>
+      <a routerLink="/productos/oficinas">Muebles para Oficinas</a>
+      <a routerLink="/productos/locales">Locales Comerciales</a>
+      <a routerLink="/productos/puertas">Puertas</a>
+    </div>
+  </div>
+
+  @if (productosFiltrados().length === 0) {
+    <div class="vacio">
+      <p>No hay productos para esta categoría.</p>
+    </div>
+  } @else {
+    <div class="grid">
+      @for (p of productosFiltrados(); track p.id) {
+        <article class="card">
+          <img [src]="p.imagen" [alt]="p.titulo" />
+          <div class="info">
+            <h3>{{ p.titulo }}</h3>
+            <p>{{ p.descripcion }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  }
+</section>
+

@@ -1,0 +1,59 @@
+<section class="hero" (mouseenter)="pause()" (mouseleave)="resume()">
+  <div class="carousel">
+    <!-- Imagen con animación -->
+    <img
+      class="carousel-img"
+      [class.is-animating]="isAnimating"
+      [src]="heroSlides[activeIndex].src"
+      [alt]="heroSlides[activeIndex].alt"
+    />
+
+    <!-- Overlay -->
+    <div class="overlay">
+      <h1>{{ heroSlides[activeIndex].title }}</h1>
+      <p>{{ heroSlides[activeIndex].subtitle }}</p>
+    </div>
+
+    <!-- Flechas -->
+    <button class="nav prev" type="button" (click)="prev()" aria-label="Anterior">‹</button>
+    <button class="nav next" type="button" (click)="next()" aria-label="Siguiente">›</button>
+
+    <!-- Dots -->
+    <div class="dots">
+      <button
+        *ngFor="let s of heroSlides; let i = index"
+        class="dot"
+        [class.active]="i === activeIndex"
+        (click)="goTo(i)"
+        type="button"
+        [attr.aria-label]="'Ir a slide ' + (i + 1)"
+      ></button>
+    </div>
+  </div>
+</section>
+
+  
+  <section class="intro">
+    <div class="container">
+      <h2>Bienvenidos a Los Cerezos</h2>
+      <p>
+        Somos fabricantes de amoblamientos a medida con más de 30 años de experiencia.
+        Diseñamos espacios únicos, con calidad artesanal y materiales nobles.
+      </p>
+    </div>
+  </section>
+  
+<section class="destacados">
+  <div class="container">
+    <h3>Productos destacados</h3>
+
+    <div class="grid">
+      <div class="card" *ngFor="let producto of productosDestacados">
+        <img [src]="producto.img" [alt]="producto.nombre" />
+        <h4>{{ producto.nombre }}</h4>
+        <a [routerLink]="producto.link">Ver más</a>
+      </div>
+    </div>
+  </div>
+</section>
+  

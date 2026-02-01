@@ -1,0 +1,29 @@
+<header class="header">
+    <div class="header-container">
+      <!-- LOGO -->
+      <a routerLink="/home" class="logo">
+        <img src="/logo3.png" alt="Los Cerezos" />
+      </a>
+  
+      <!-- NAVIGATION -->
+      <nav class="nav" [class.active]="isMenuOpen">
+        <a routerLink="/home" routerLinkActive="active" (click)="isMenuOpen = false">Inicio</a>
+        <a routerLink="/empresa" routerLinkActive="active" (click)="isMenuOpen = false">Empresa</a>
+  
+        <div class="dropdown">
+          <span><a routerLink="/categorias">Productos</a></span>
+        </div>
+  
+        <a routerLink="/showroom" routerLinkActive="active" (click)="isMenuOpen = false">Showroom</a>
+        <a routerLink="/contacto" routerLinkActive="active" (click)="isMenuOpen = false">Contacto</a>
+      </nav>
+  
+      <!-- BURGER MENU (mobile) -->
+      <div class="burger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  

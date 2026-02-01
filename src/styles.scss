@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+// ===================
+// RESET BÁSICO
+// ===================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Poppins', sans-serif;  // 👈 o 'Open Sans', 'Inter'
+    background-color: #ffffff;
+    color: #1d1d1d;
+    line-height: 1.6;
+  }
+.footer {
+    background-color: #712e1e; // color primario
+    color: #ffffff;            // texto blanco
+    padding: 2rem 0 1rem;
+  
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+  
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+  
+        h4 {
+          margin-bottom: 0.5rem;
+          color: #bba07b; // color secundario
+          font-weight: 500;
+        }
+  
+        p {
+          margin: 0.2rem 0;
+          font-size: 0.9rem;
+        }
+  
+        .logo {
+          width: 160px;
+        }
+  
+        .socials {
+          display: flex;
+          gap: 1rem;
+          margin-top: 0.5rem;
+  
+          a img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+      color: #f5f5f5; // color claro
+    }
+  }
+  

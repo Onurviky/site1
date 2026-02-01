@@ -1,0 +1,32 @@
+<section class="showroom">
+  <h1>Showroom</h1>
+  <p>Conocé nuestros espacios diseñados a medida. Ambientes reales, ideas reales.</p>
+
+  <div class="terminaciones" *ngFor="let tipo of terminaciones">
+    <h2>{{ tipo.nombre }}</h2>
+
+    <div class="gallery">
+      <div class="item" *ngFor="let img of tipo.imagenes">
+        <img [src]="img.url" [alt]="img.descripcion" />
+        <p class="desc">{{ img.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="map-container">
+    <h2>¿Dónde estamos?</h2>
+    <p>
+      Oficina: Pasaje Costarelli 5366 (Av. Del Rosario al 100, zona sur de la ciudad de Rosario)
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.180296089203!2d-60.6744179!3d-32.9892088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b653cc6c9f3bb1%3A0x9577f697b2fa0ff8!2sPasaje%20Costarelli%205366%2C%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1693428436958!5m2!1ses!2sar"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div> -->
+</section>
+
