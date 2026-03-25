@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-showroom',
-  standalone: true, 
-  imports: [CommonModule], 
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './showroom.component.html',
   styleUrls: ['./showroom.component.scss']
 })
 export class ShowroomComponent {
   terminaciones = [
-    
+
       // ================= MELAMINA =================
     {
       nombre: 'Melamina',
@@ -20,7 +20,11 @@ export class ShowroomComponent {
         { url: '/PANEL TV MELAMINA BLANCA.jpeg', descripcion: 'Melamina: panel TV en melamina blanca' },
         { url: '/RACK TV MELAMINA BLANCA BRILLANTE.jpg', descripcion: 'Melamina: rack TV en melamina blanca brillante' },
         { url: '/MUEBLE LIVING MELAMINA Y LAQUEADO BLANCO.jpeg', descripcion: 'Melamina: living combinando melamina y laqueado blanco' },
-        { url: '/MUEBLE LIVING MELAMINA COMBINADA.jpeg', descripcion: 'Melamina: mueble living en melamina combinada' }
+        { url: '/MUEBLE JUVENIL 5.jpg', descripcion: 'Melamina: dormitorios juveniles en melamina combinada' },
+        { url: '/MUEBLE LIVING MELAMINA COMBINADA.jpeg', descripcion: 'Melamina: living estilo con melamina combinada' },
+        { url: '/PLACARDS Y VESTIDORES.jpeg', descripcion: 'Melamina: dormitorio placard y vestidor en melamina combinada' },
+        { url: '/LIVINGS.jpg', descripcion: 'Melamina: mueble living en melamina combinada' },
+        { url: '/MUEBLE JUVENIL 1.jpg', descripcion: 'Melamina: muebles dormitorio melamina' }
       ]
     },
 
@@ -33,7 +37,11 @@ export class ShowroomComponent {
         { url: '/COCINA LAQUEADA GRIS OSCURO  AZAHARES DEL PARANÀ.jpg', descripcion: 'Laqueado: cocina laqueada gris oscuro' },
         { url: '/RACK TV LAQUEADO BLANCO.jpg', descripcion: 'Laqueado: rack TV laqueado blanco' },
         { url: '/PUERTA GRANERO MADERA LAQUEADA BLANCA.jpg', descripcion: 'Laqueado: puerta granero con terminación laqueada' },
-        { url: '/PUERTAS TABLERO LAQUEADAS BLANCAS.jpg', descripcion: 'Laqueado: puertas laqueadas blancas' }
+        { url: '/PUERTAS TABLERO LAQUEADAS BLANCAS.jpg', descripcion: 'Laqueado: puertas laqueadas blancas' },
+        { url: '/LAVADEROS.webp', descripcion: 'Laqueado: para lavaderos' },
+        { url: '/BIBLIOTECAS.jpg', descripcion: 'Laqueado: Biblioteca laqueada' },
+        { url: '/BAÑOS.jpg', descripcion: 'Laqueado: baños con laqueado en color' },
+        { url: '/REVESTIMIENTOS.jpg', descripcion: 'Laqueado: revestimiento en laqueado' }
       ]
     },
 
@@ -46,7 +54,11 @@ export class ShowroomComponent {
         { url: '/PUERTA INTERIOR MADERA LUSTRADA.jpg', descripcion: 'Madera: puerta interior lustrada' },
         { url: '/PUERTA MACIZA MADERA CON VISOR VERTICAL.jpg', descripcion: 'Madera: puerta maciza con visor vertical' },
         { url: '/PUERTA MADERA CON TABLAS VERTICALES.jpg', descripcion: 'Madera: puerta con tablas verticales' },
-        { url: '/DIVISORIO ESCALERA MADERA LUSTRADA.jpg', descripcion: 'Madera: divisorios de escalera en madera lustrada' }
+        { url: '/DIVISORIO ESCALERA MADERA LUSTRADA.jpg', descripcion: 'Madera: divisorios de escalera en madera lustrada' },
+        { url: '/PUERTAS.jpg', descripcion: 'Madera: Puertas outdoor en madera' },
+        { url: '/RESTAURACIONES.jpg', descripcion: 'Madera: restauraciones hechas en madera lustrada' },
+        { url: '/MESAS.jpg', descripcion: 'Madera: mesas en madera ' },
+        { url: '/ESCALERAS Y BAJOESCALERAS.jpg', descripcion: 'Madera: escaleras y bajoescaleras hechas en madera lustrada' }
       ]
     },
 

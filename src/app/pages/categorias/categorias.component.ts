@@ -22,12 +22,12 @@ export class CategoriasComponent {
   // - imagen: usá un jpg que tengas en /public (si no, cambiá por uno real)
   categorias: Categoria[] = [
     { titulo: 'Cocinas', slug: 'cocinas', subtitulo: 'Diseños a medida y funcionales.', imagen: 'COCINA MADERA 3.jpg' },
-    { titulo: 'Placards', slug: 'placards', subtitulo: 'Interiores y frentes personalizados.', imagen: 'PlacardHome.jpg' },
-    { titulo: 'Baño', slug: 'banio', subtitulo: 'Muebles de baño y vanitorys.', imagen: 'MUEBLE DE BAÑO DE DISEÑO LAQUEADO 1.jpg' },
+    { titulo: 'Placards y vestidores', slug: 'placards', subtitulo: 'Interiores y frentes personalizados.', imagen: 'PlacardHome.jpg' },
+    { titulo: 'Baños', slug: 'banio', subtitulo: 'Muebles de baño y vanitorys.', imagen: 'MUEBLE DE BAÑO DE DISEÑO LAQUEADO 1.jpg' },
     { titulo: 'Lavaderos', slug: 'lavaderos', subtitulo: 'Soluciones resistentes y prácticas.', imagen: 'LAVADERO 5.jpg' },
-    { titulo: 'Living / TV', slug: 'living', subtitulo: 'Rack TV, bibliotecas y guardado.', imagen: 'RACK TV MELAMINA.jpg' },
+    { titulo: 'Livings y salas de TV', slug: 'living', subtitulo: 'Rack TV, bibliotecas y guardado.', imagen: 'RACK TV MELAMINA.jpg' },
     { titulo: 'Dormitorios', slug: 'dormitorios', subtitulo: 'Placares, respaldos y guardado.', imagen: 'DORMITORIO COMPLETO MADERA LUSTRADA Y MELAMINA.jpg' },
-    { titulo: 'Infantiles', slug: 'infantiles', subtitulo: 'Muebles pensados para chicos.', imagen: 'EscritorioHome.jpg' },
+    { titulo: 'Dormitorios juveniles', slug: 'infantiles', subtitulo: 'Muebles pensados para chicos.', imagen: 'EscritorioHome.jpg' },
     { titulo: 'Bibliotecas', slug: 'bibliotecas', subtitulo: 'Bibliotecas a medida y estantes.', imagen: 'RACK TV-BIBLIOTECA MADERA LUSTRAD Y LAQUEADO BLANCO.jpg' },
     { titulo: 'Escaleras y Bajoescaleras', slug: 'escaleras', subtitulo: 'Aprovechá cada espacio.', imagen: 'DIVISORIO ESCALERA CON PUERTITA MADERA.jpg' },
     { titulo: 'Oficinas', slug: 'oficinas', subtitulo: 'Escritorios, guardado y más.', imagen: 'ESCRITORIOS DE MELAMINA Y CAÑO.jpg' },

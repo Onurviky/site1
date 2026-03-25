@@ -52,7 +52,7 @@ export class ProductosComponent implements OnInit {
   { id: 19, categoria: 'living', titulo: 'Living melamina', descripcion: 'Living en melamina combinada.', imagen: '/MUEBLE LIVING MELAMINA COMBINADA.jpeg' },
   { id: 20, categoria: 'living', titulo: 'Panel TV', descripcion: 'Panel TV en melamina blanca.', imagen: '/PANEL TV MELAMINA BLANCA.jpeg' },
 
-  // ===== LAVADEROS (4) ===== no tengo fotos 
+  // ===== LAVADEROS (4) ===== no tengo fotos
   { id: 21, categoria: 'lavaderos', titulo: 'Lavadero blanco', descripcion: 'Lavadero funcional en melamina blanca.', imagen: '/LAVADERO 2.jpg' },
   { id: 22, categoria: 'lavaderos', titulo: 'Lavadero madera', descripcion: 'Lavadero con detalles en madera.', imagen: '/LAVADERO 3.jpg' },
   { id: 23, categoria: 'lavaderos', titulo: 'Lavadero moderno', descripcion: 'Diseño moderno y práctico.', imagen: '/LAVADERO 1.jpg' },
@@ -65,10 +65,10 @@ export class ProductosComponent implements OnInit {
   { id: 28, categoria: 'dormitorios', titulo: 'Dormitorio moderno', descripcion: 'Diseño moderno y funcional.', imagen: '/DORMITORIO COMPLETO MADERA LUSTRADA Y MELAMINA.jpg' },
 
   // ===== INFANTILES (4) =====
-  { id: 29, categoria: 'infantiles', titulo: 'Infantil dormitorio', descripcion: 'Dormitorio infantil en melamina blanca.', imagen: '/PLACARD CON ESCRITORIO.jpg' },
-  { id: 30, categoria: 'infantiles', titulo: 'Infantil marinera', descripcion: 'Cama marinera con cajones de madera.', imagen: '/CAMA NIDO CON CAJONES Y MARINERA.jpg' },
-  { id: 31, categoria: 'infantiles', titulo: 'Mesa de luz en madera', descripcion: 'Mesa de luz adaptable doble cajonera.', imagen: '/MESA DE LUZ MADERA DOS CAJONES.jpeg' },
-  { id: 32, categoria: 'infantiles', titulo: 'Mesa de luz Infantil', descripcion: 'Mesa de luz en madera.', imagen: '/MESA LUZ MADERA.jpeg' },
+  { id: 29, categoria: 'infantiles', titulo: 'Dormitorio juvenil', descripcion: 'Dormitorio infantil en melamina blanca y amarilla.', imagen: '/MUEBLE JUVENIL 1.jpg' },
+  { id: 30, categoria: 'infantiles', titulo: 'Dormitorio juvenil moderno', descripcion: 'Dormitorio en melamina y madera.', imagen: '/MUEBLE JUVENIL 5.jpg' },
+  { id: 31, categoria: 'infantiles', titulo: 'Cama cucheta con cajones', descripcion: 'Cucheta en melamina con cajones.', imagen: '/MUEBLE JUVENIL 3.jpg' },
+  { id: 32, categoria: 'infantiles', titulo: 'Dormitorio juvenil naranja', descripcion: 'Dormitorio infantil en melamina blanca y naranja.', imagen: '/MUEBLE JUVENIL 2.jpg' },
 
   // ===== BIBLIOTECAS (4) =====
   { id: 33, categoria: 'bibliotecas', titulo: 'Biblioteca madera', descripcion: 'Biblioteca de madera lustrada.', imagen: '/RACK TV-BIBLIOTECA MADERA LUSTRAD Y LAQUEADO BLANCO.jpg' },
@@ -120,12 +120,12 @@ export class ProductosComponent implements OnInit {
 
     const map: Record<string, string> = {
       cocinas: 'Cocinas',
-      placards: 'Placards',
+      placards: 'Placards y vestidores',
       banio: 'Muebles de Baño',
       lavaderos: 'Lavaderos',
       living: 'Muebles de Living / TV',
       dormitorios: 'Dormitorios',
-      infantiles: 'Dormitorios Infantiles',
+      infantiles: 'Dormitorios juveniles',
       bibliotecas: 'Bibliotecas',
       escaleras: 'Escaleras y Bajoescaleras',
       oficinas: 'Muebles para Oficinas',

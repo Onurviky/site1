@@ -23,7 +23,7 @@ type HeroSlide = {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  
+
       heroSlides: HeroSlide[] = [
     {
       src: '/HomeBarra.jpg',
@@ -43,6 +43,61 @@ export class HomeComponent {
       title: 'Placards que aprovechan cada espacio',
       subtitle: 'Diseño, orden y terminaciones premium',
     },
+
+{
+  src: '/PUERTAS.jpg',
+  alt: 'Puertas de madera a medida',
+  title: 'Puertas a medida',
+  subtitle: 'Diseño, calidad y terminaciones personalizadas',
+},
+{
+  src: '/RESTAURACIONES.jpg',
+  alt: 'Restauración de muebles de madera',
+  title: 'Restauraciones',
+  subtitle: 'Recuperación y renovación de muebles existentes',
+},
+{
+  src: '/MESAS.jpg',
+  alt: 'Mesas de madera a medida',
+  title: 'Mesas a medida',
+  subtitle: 'Diseño único con materiales de alta calidad',
+},
+{
+  src: '/ESCALERAS Y BAJOESCALERAS.jpg',
+  alt: 'Muebles para escaleras y bajoescaleras',
+  title: 'Escaleras y bajoescaleras',
+  subtitle: 'Aprovechamiento inteligente de cada espacio',
+},
+{
+  src: '/BIBLIOTECAS.jpg',
+  alt: 'Bibliotecas de madera a medida',
+  title: 'Bibliotecas',
+  subtitle: 'Estantes y módulos personalizados para tu hogar',
+},
+{
+  src: '/LAVADEROS.webp',
+  alt: 'Muebles para lavaderos',
+  title: 'Lavaderos',
+  subtitle: 'Soluciones prácticas y resistentes al uso diario',
+},
+{
+  src: '/BAÑOS.jpg',
+  alt: 'Muebles de baño a medida',
+  title: 'Baños',
+  subtitle: 'Vanitorys y muebles funcionales con estilo moderno',
+},
+{
+  src: '/MUEBLE JUVENIL 1.jpg',
+  alt: 'Mueble juvenil a medida',
+  title: 'Muebles juveniles',
+  subtitle: 'Diseños funcionales pensados para jóvenes',
+},
+{
+  src: '/REVESTIMIENTOS.jpg',
+  alt: 'Revestimientos de madera',
+  title: 'Revestimientos',
+  subtitle: 'Terminaciones en madera que transforman espacios',
+}
   ];
     activeIndex = 0;
   isAnimating = false;
